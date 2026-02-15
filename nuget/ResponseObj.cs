@@ -54,11 +54,9 @@ namespace APIVerve.API.TimezoneLookup
         public string Month { get; set; }
 
         [JsonProperty("year")]
-        [JsonConverter(typeof(ParseStringConverter))]
         public long Year { get; set; }
 
         [JsonProperty("unix")]
-        [JsonConverter(typeof(ParseStringConverter))]
         public long Unix { get; set; }
 
         [JsonProperty("dst")]
