@@ -12,7 +12,6 @@ namespace APIVerve.API.TimezoneLookup
     {
         /// <summary>
         /// The city name for which you want to get the data (e.g., Harare)
-        /// Example: Harare
         /// </summary>
         [JsonProperty("city")]
         public string City { get; set; }
