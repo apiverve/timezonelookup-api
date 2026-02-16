@@ -229,8 +229,9 @@ from apiverve_timezonelookup.apiClient import TimezonelookupAPIClient
 
 api = TimezonelookupAPIClient("[YOUR_API_KEY]")
 
+query = { "city": "Harare" }
+
 try:
-    query = { "city": "Harare" }
     result = api.execute(query)
     print(result)
 finally:
