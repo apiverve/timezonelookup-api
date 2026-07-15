@@ -124,17 +124,17 @@ async function makeRequest() {
   "data": {
     "timezone": "Africa/Harare",
     "timezone_offset": 120,
-    "date": "2025-02-20",
-    "time": "23:34",
-    "time24": "23:34:29",
-    "time12": "11:34:29 PM",
-    "day": "Thursday",
-    "month": "February",
+    "date": "2025-12-17",
+    "time": "00:30",
+    "time24": "00:30:23",
+    "time12": "12:30:23 AM",
+    "day": "Wednesday",
+    "month": "December",
     "year": "2025",
-    "unix": "1740087269",
+    "unix": "1765924223",
     "dst": false,
-    "dst_start": "2025-02-20 23:34:29",
-    "dst_end": "2025-02-20 23:34:29",
+    "dst_start": "2025-12-17 00:30:23",
+    "dst_end": "2025-12-17 00:30:23",
     "dst_name": "CAT"
   }
 }
