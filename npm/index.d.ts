@@ -4,29 +4,41 @@ declare module '@apiverve/timezonelookup' {
     secure?: boolean;
   }
 
+  /**
+   * Describes fields the current plan does not unlock. Locked fields arrive as null
+   * in `data`; `locked_fields` names them, using dot paths for nested fields.
+   * Absent when the plan unlocks everything.
+   */
+  export interface PremiumInfo {
+    message: string;
+    upgrade_url: string;
+    locked_fields: string[];
+  }
+
   export interface timezonelookupResponse {
     status: string;
     error: string | null;
     data: TimezoneLookupData;
     code?: number;
+    premium?: PremiumInfo;
   }
 
 
   interface TimezoneLookupData {
-      timezone:       string;
-      timezoneOffset: number;
-      date:           Date;
-      time:           string;
-      time24:         string;
-      time12:         string;
-      day:            string;
-      month:          string;
-      year:           string;
-      unix:           string;
-      dst:            boolean;
-      dstStart:       Date;
-      dstEnd:         Date;
-      dstName:        string;
+      timezone:       null | string;
+      timezoneOffset: number | null;
+      date:           Date | null;
+      time:           null | string;
+      time24:         null | string;
+      time12:         null | string;
+      day:            null | string;
+      month:          null | string;
+      year:           null | string;
+      unix:           null | string;
+      dst:            boolean | null;
+      dstStart:       Date | null;
+      dstEnd:         Date | null;
+      dstName:        null | string;
   }
 
   export default class timezonelookupWrapper {
