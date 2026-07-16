@@ -25,6 +25,9 @@ namespace APIVerve.API.TimezoneLookup
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -33,16 +36,16 @@ namespace APIVerve.API.TimezoneLookup
         public string Timezone { get; set; }
 
         [JsonProperty("timezone_offset")]
-        public long TimezoneOffset { get; set; }
+        public long? TimezoneOffset { get; set; }
 
         [JsonProperty("date")]
-        public DateTimeOffset Date { get; set; }
+        public DateTimeOffset? Date { get; set; }
 
         [JsonProperty("time")]
         public string Time { get; set; }
 
         [JsonProperty("time24")]
-        public DateTimeOffset Time24 { get; set; }
+        public DateTimeOffset? Time24 { get; set; }
 
         [JsonProperty("time12")]
         public string Time12 { get; set; }
@@ -54,21 +57,33 @@ namespace APIVerve.API.TimezoneLookup
         public string Month { get; set; }
 
         [JsonProperty("year")]
-        public long Year { get; set; }
+        public long? Year { get; set; }
 
         [JsonProperty("unix")]
-        public long Unix { get; set; }
+        public long? Unix { get; set; }
 
         [JsonProperty("dst")]
-        public bool Dst { get; set; }
+        public bool? Dst { get; set; }
 
         [JsonProperty("dst_start")]
-        public DateTimeOffset DstStart { get; set; }
+        public DateTimeOffset? DstStart { get; set; }
 
         [JsonProperty("dst_end")]
-        public DateTimeOffset DstEnd { get; set; }
+        public DateTimeOffset? DstEnd { get; set; }
 
         [JsonProperty("dst_name")]
         public string DstName { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
