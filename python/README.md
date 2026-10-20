@@ -1,13 +1,12 @@
 Timezone Lookup API
 ============
 
-Timezone Lookup is a simple tool for looking up timezone data. It returns the timezone name, offset, and more.
+Timezone Lookup resolves any city or IANA zone name to its local time, UTC offset, and calendar date. Responses include 12-hour and 24-hour clocks plus the minute offset from GMT.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a Python API Wrapper for the [Timezone Lookup API](https://timezonelookup.apiverve.com?utm_source=pypi&utm_medium=readme)
+[![PyPI version](https://img.shields.io/pypi/v/apiverve-timezonelookup.svg)](https://pypi.org/project/apiverve-timezonelookup/)
+
+This is a Python wrapper for the [Timezone Lookup API](https://apiverve.com/marketplace/timezonelookup?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -29,8 +28,8 @@ pip3 install apiverve-timezonelookup
 
 ## Configuration
 
-Before using the timezonelookup API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=readme)
+Before using the Timezone Lookup API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -60,7 +59,7 @@ except Exception as e:
 
 ## Usage
 
-The Timezone Lookup API documentation is found here: [https://docs.apiverve.com/ref/timezonelookup](https://docs.apiverve.com/ref/timezonelookup?utm_source=pypi&utm_medium=readme).
+The Timezone Lookup API documentation is found here: [https://docs.apiverve.com/ref/timezonelookup](https://docs.apiverve.com/ref/timezonelookup?utm_source=pypi&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
@@ -104,17 +103,17 @@ print(result)
   "data": {
     "timezone": "Africa/Harare",
     "timezone_offset": 120,
-    "date": "2025-02-20",
-    "time": "23:34",
-    "time24": "23:34:29",
-    "time12": "11:34:29 PM",
-    "day": "Thursday",
-    "month": "February",
+    "date": "2025-12-17",
+    "time": "00:30",
+    "time24": "00:30:23",
+    "time12": "12:30:23 AM",
+    "day": "Wednesday",
+    "month": "December",
     "year": "2025",
-    "unix": "1740087269",
+    "unix": "1765924223",
     "dst": false,
-    "dst_start": "2025-02-20 23:34:29",
-    "dst_end": "2025-02-20 23:34:29",
+    "dst_start": "2025-12-17 00:30:23",
+    "dst_end": "2025-12-17 00:30:23",
     "dst_name": "CAT"
   }
 }
@@ -243,7 +242,7 @@ finally:
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -254,12 +253,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 
