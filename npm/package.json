@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/timezonelookup",
-  "version": "1.2.0",
-  "description": "Timezone Lookup is a simple tool for looking up timezone data. It returns the timezone name, offset, and more.",
+  "version": "1.2.2",
+  "description": "Timezone Lookup resolves any city or IANA zone name to its local time, UTC offset, and calendar date. Responses include 12-hour and 24-hour clocks plus the minute offset from GMT.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "timezone lookup", "timezone lookup api", "timezone lookup tool", "timezone lookup software", "timezone lookup service"
+    "timezone lookup api", "timezone lookup", "city timezone", "utc offset lookup", "find local time by city"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/timezonelookup-api/issues"
   },
-  "homepage": "https://timezonelookup.apiverve.com?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/timezonelookup?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
