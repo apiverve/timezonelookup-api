@@ -1,13 +1,13 @@
-# [Timezone Lookup API](https://timezonelookup.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Timezone Lookup API](https://apiverve.com/marketplace/timezonelookup?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Timezone Lookup is a simple tool for looking up timezone data. It returns the timezone name, offset, and more.
+Timezone Lookup resolves any city or IANA zone name to its local time, UTC offset, and calendar date. Responses include 12-hour and 24-hour clocks plus the minute offset from GMT.
 
 The Timezone Lookup API provides a simple, reliable way to integrate timezone lookup functionality into your applications. Built for developers who need production-ready timezone lookup capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://timezonelookup.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/timezonelookup?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://timezonelookup.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/timezonelookup?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -161,7 +161,7 @@ go get github.com/apiverve/timezonelookup-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [Timezone Lookup API](https://timezonelookup.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Timezone Lookup API](https://apiverve.com/marketplace/timezonelookup?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/timezonelookup](https://docs.apiverve.com/ref/timezonelookup)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -191,11 +191,41 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the Timezone Lookup API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "timezone": "Africa/Harare",
+    "timezone_offset": 120,
+    "date": "2025-12-17",
+    "time": "00:30",
+    "time24": "00:30:23",
+    "time12": "12:30:23 AM",
+    "day": "Wednesday",
+    "month": "December",
+    "year": "2025",
+    "unix": "1765924223",
+    "dst": false,
+    "dst_start": "2025-12-17 00:30:23",
+    "dst_end": "2025-12-17 00:30:23",
+    "dst_name": "CAT"
+  }
 }
 ```
 
@@ -203,7 +233,7 @@ All responses are JSON with this structure:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Timezone Lookup API](https://timezonelookup.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Timezone Lookup API](https://apiverve.com/marketplace/timezonelookup?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)

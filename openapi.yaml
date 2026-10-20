@@ -2,8 +2,9 @@ openapi: 3.0.4
 info:
   title: Timezone Lookup
   description: >-
-    Timezone Lookup is a simple tool for looking up timezone data. It returns
-    the timezone name, offset, and more.
+    Timezone Lookup resolves any city or IANA zone name to its local time, UTC
+    offset, and calendar date. Responses include 12-hour and 24-hour clocks plus
+    the minute offset from GMT.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +19,7 @@ servers:
 paths:
   /v1/timezonelookup:
     get:
-      summary: Lookup Timezone by City
+      summary: Timezone Lookup
       description: Lookup timezone data based on the city name
       operationId: timezonelookup
       parameters:
