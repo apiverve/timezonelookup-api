@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/timezonelookup",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Timezone Lookup resolves any city or IANA zone name to its local time, UTC offset, and calendar date. Responses include 12-hour and 24-hour clocks plus the minute offset from GMT.",
   "main": "index.js",
   "types": "index.d.ts",
