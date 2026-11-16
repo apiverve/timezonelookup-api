@@ -1,10 +1,10 @@
 [project]
 name = "apiverve-timezonelookup"
-version = "1.2.5"
+version = "1.2.6"
 authors = [
   { name="APIVerve", email="hello@apiverve.com" },
 ]
-description = "Timezone Lookup resolves any city or IANA zone name to its local time, UTC offset, and calendar date. Responses include 12-hour and 24-hour clocks plus the minute offset from GMT."
+description = "Timezone Lookup resolves a city, an IANA zone name or a latitude and longitude to its local time, UTC offset, and calendar date. Responses include 12-hour and 24-hour clocks plus the minute offset from GMT."
 keywords = ["timezone lookup api", "timezone lookup", "city timezone", "utc offset lookup", "find local time by city"]
 readme = "README.md"
 requires-python = ">=3.9"
