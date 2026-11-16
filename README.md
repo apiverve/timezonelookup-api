@@ -1,6 +1,6 @@
 # [Timezone Lookup API](https://apiverve.com/marketplace/timezonelookup?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Timezone Lookup resolves any city or IANA zone name to its local time, UTC offset, and calendar date. Responses include 12-hour and 24-hour clocks plus the minute offset from GMT.
+Timezone Lookup resolves a city, an IANA zone name or a latitude and longitude to its local time, UTC offset, and calendar date. Responses include 12-hour and 24-hour clocks plus the minute offset from GMT.
 
 The Timezone Lookup API provides a simple, reliable way to integrate timezone lookup functionality into your applications. Built for developers who need production-ready timezone lookup capabilities without the complexity of building from scratch.
 
