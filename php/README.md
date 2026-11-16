@@ -1,6 +1,6 @@
 # Timezone Lookup API - PHP Package
 
-Timezone Lookup resolves any city or IANA zone name to its local time, UTC offset, and calendar date. Responses include 12-hour and 24-hour clocks plus the minute offset from GMT.
+Timezone Lookup resolves a city, an IANA zone name or a latitude and longitude to its local time, UTC offset, and calendar date. Responses include 12-hour and 24-hour clocks plus the minute offset from GMT.
 
 ## Installation
 
